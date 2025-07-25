@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/mh.png" />
+  <title>Cuisine</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #120f2d;
+    }
+
+    .container {
+      background: #120f2d;
+      color: #120f2d;
+    }
+
+    /* Header section */
+    #header .header-top {
+      width: 100%;
+      padding: 8px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 69;
+    }
+
+    #header .header-top:hover {
+      background-color: black;
+      opacity: 0.8;
+    }
+
+    .header-top .logo a {
+      text-decoration: none;
+      color: #4b557a;
+      font-size: 25px;
+      font-weight: 700;
+    }
+
+    .header-top .logo a span {
+      color: #faca22;
+    }
+
+    .nav-menu ul li {
+      display: inline-block;
+      list-style: none;
+      margin: 10px 15px;
+    }
+
+    .nav-menu ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      position: relative;
+    }
+
+    .nav-menu ul li a::after {
+      content: "";
+      width: 0;
+      height: 2px;
+      background: #faca22;
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      transition: all 0.5s;
+    }
+
+    .nav-menu ul li a:hover {
+      color: white;
+    }
+
+    .nav-menu ul li a:hover::after {
+      width: 100%;
+    }
+
+    #header .header-bottom {
+      width: 100%;
+      min-height: 100vh;
+      background-color: #fdf7f1;
+      color: #000;
+      padding: 60px 0 5%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .content-wrapper {
+      width: 70%;
+      max-width: 1400px;
+      margin: auto;
+      text-align: center;
+    }
+
+    #head {
+      margin-top: 10px;
+    }
+
+    #head h1 {
+      color: #1f2937;
+      font-size: 50px;
+    }
+
+    #head p {
+      margin-top: 15px;
+      color: #4b5563;
+      line-height: 1.5;
+      font-size: 22px;
+    }
+
+    /* Cards Section */
+    .cards {
+      margin-top: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .card {
+      width: 48%;
+      height: 300px;
+      perspective: 1000px;
+      cursor: pointer;
+    }
+
+    .card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+
+    .card:hover .card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .card-front,
+    .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card-front {
+      background: white;
+      color: #000;
+    }
+
+    .card-front img {
+      width: 100%;
+      height: 85%;
+      object-fit: cover;
+      border-radius: 0px 25px 0px 25px;
+    }
+
+    .card-front h3 {
+      font-size: 25px;
+      margin-top: 10px;
+      color: #c3430f;
+    }
+
+    .card-back {
+      background: #c2e9fb;
+      color: white;
+      padding: 15px;
+      transform: rotateY(180deg);
+      text-align: justify;
+      font-size: 17px;
+    }
+  </style>
+</head>
+
+<body>
+  <section id="header">
+    <div class="header-top">
+      <div class="logo">
+        <a href="index.html"><span>Legacy </span>Of India</a>
+      </div>
+      <div class="nav-menu">
+        <ul class="sidemenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="place.html">Places</a></li>
+          <li><a href="festival.html">Festival</a></li>
+          <li><a href="cusine.html">Cuisine</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div id="header">
+      <!-- Main Content -->
+      <div class="header-bottom">
+        <div class="content-wrapper">
+          <div id="head">
+            <h1>Authentic Cuisine 🍛</h1>
+            <p>
+              Discover the rich flavors and diverse culinary traditions that
+              make Maharashtrian cuisine a delightful journey for your taste
+              buds.
+            </p>
+          </div>
+
+          <!-- Cards -->
+          <div class="cards">
+            <!-- Card 1 -->
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="https://blog.swiggy.com/wp-content/uploads/2024/11/Image-1_mumbai-vada-pav-1024x538.png"
+                    alt="Vada Pav" />
+                  <h3>Vada Pav</h3>
+                </div>
+                <div class="card-back">
+                  A true Mumbai street food icon — a deep-fried potato patty
+                  (vada) is stuffed inside a pav (bread bun) and served with
+                  spicy garlic chutney and green chili. It's quick, cheap, and
+                  full of flavor.
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Card 2 -->
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="https://c.ndtvimg.com/2020-03/j1bguoe_puran-poli_625x300_19_March_20.jpg"
+                    alt="Puran Poli" />
+                  <h3>Puran Poli</h3>
+                </div>
+                <div class="card-back">
+                  A festive flatbread filled with sweet lentil (chana dal) and
+                  jaggery mixture, flavored with cardamom. Served with ghee or
+                  milk, Puran Poli is a Maharashtrian must-have during Holi
+                  and Diwali.
+                </div>
+              </div>
+            </div>
+
+            
+
+            <!-- Card 3 -->
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img
+                    src="https://i0.wp.com/wp-backend.thefearlesscooking.com/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-05-at-7.24.22-AM.jpeg?fit=1600%2C1066&ssl=1"
+                    alt="Misal Pav" />
+                  <h3>Misal Pav</h3>
+                </div>
+                <div class="card-back">
+                  This spicy and tangy dish consists of a sprouted moth bean
+                  curry topped with crunchy farsan, onions, and lemon, served
+                  with soft pav. It's a popular breakfast or brunch,
+                  especially in Pune and Kolhapur.
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="https://madhurasrecipe.com/wp-content/uploads/2023/09/Ukadiche-Modak-Featured-Image.jpg"
+                    alt="Modak" />
+                  <h3>Modak</h3>
+                </div>
+                <div class="card-back">
+                  A beloved sweet dumpling made of rice flour and stuffed with
+                  coconut and jaggery, Modak is especially prepared during
+                  Ganesh Chaturthi as an offering to Lord Ganesha. It
+                  represents purity and devotion.
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+         
+        <!-- End of cards -->
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

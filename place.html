@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/mh.png" />
+  <title>Places</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #120f2d;
+    }
+
+    .container {
+
+      color: #120f2d;
+    }
+
+    /* Header section */
+    #header .header-top {
+      width: 100%;
+      padding: 8px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      z-index: 69;
+    }
+
+    #header .header-top:hover {
+      background-color: black;
+      opacity: .8;
+    }
+
+    /* .logo img{
+  width: 150px;
+} */
+
+    .header-top .logo a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 25px;
+      font-weight: 700;
+    }
+
+    .header-top .logo a span {
+      color: #faca22;
+    }
+
+    .nav-menu ul li {
+      display: inline-block;
+      list-style: none;
+      margin: 10px 15px;
+    }
+
+    .nav-menu ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      position: relative;
+    }
+
+    .nav-menu ul li a::after {
+      content: "";
+      width: 0;
+      height: 2px;
+
+      background: #faca22;
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      transition: all 0.5s;
+    }
+
+    .nav-menu ul li a:hover {
+      color: white;
+    }
+
+    .nav-menu ul li a:hover::after {
+
+      width: 100%;
+    }
+
+
+    #header .header-bottom {
+      width: 100%;
+      min-height: 100vh;
+      background-color: #fdf7f1;
+      color: #000;
+      padding: 60px 0 5%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .content-wrapper {
+      width: 100%;
+      max-width: 1400px;
+      margin: auto;
+      text-align: center;
+    }
+
+    #head {
+      margin-top: 10px;
+    }
+
+    #head h1 {
+      color: #1f2937;
+      font-size: 50px;
+    }
+
+    #head p {
+      margin-top: 15px;
+      color: #4b5563;
+      line-height: 1.5;
+      font-size: 22px;
+    }
+
+    /* Cards Section */
+    .cards {
+      margin-top: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .card {
+      width: 45%;
+      min-height: 450px;
+      border-radius: 20px;
+      background-color: #fff;
+      color: #000;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+
+    .card:hover {
+      transform: scale(1.05);
+      background-color: #d4c7c7;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+
+    .card h3 {
+      font-size: 25px;
+      margin-top: 20px;
+      color: #c3430f;
+    }
+
+    .card p {
+      padding: 15px;
+      text-align: justify;
+      font-size: 17px;
+      color: #4b5563;
+    }
+  </style>
+</head>
+
+<body>
+  <section id="header">
+    <div class="header-top">
+      <!-- <div class="logo">
+            <img src="newl.png" alt="logo-pic"  >
+          </div> -->
+      <div class="logo">
+        <a href="index.html"><span>Legacy </span>Of India</a>
+      </div>
+      <div class="nav-menu">
+        <ul class="sidemenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="place.html">Places</a></li>
+          <li><a href="festival.html">Festival</a></li>
+          <li><a href="cusine.html">Cusine</a></li>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+
+    <div id="header">
+      <!-- Main Content -->
+      <div class="header-bottom">
+        <div class="content-wrapper">
+          <div id="head">
+            <h1>Places To Visit 🏛️</h1>
+            <p>
+              "Embark on a journey through time and discover India’s timeless treasures — majestic monuments, sacred
+              temples, ancient caves, and vibrant architecture that reflect its glorious heritage and cultural depth."
+            </p>
+          </div>
+
+          <!-- Cards -->
+          <div class="cards">
+            <div class="card">
+              <img src="https://i.pinimg.com/1200x/f3/74/13/f37413331f12ec6ec1dea48984247389.jpg" alt=""
+                style="height: 250px; border-radius: 25px 25px 0px 0px" />
+              <h3>Taj Mahal</h3>
+              <p>
+                The Taj Mahal, located in Agra, India, is one of the most iconic monuments in the world and a symbol of
+                eternal love.
+                Built in 1632 by Mughal Emperor Shah Jahan in memory of his wife Mumtaz Mahal, it is a stunning example
+                of Mughal architecture,
+                blending Persian, Islamic, and Indian styles. Made from gleaming white marble and adorned with intricate
+                carvings and precious
+                stones, the Taj Mahal attracts millions of visitors from around the globe. It is not just a UNESCO World
+                Heritage Site, but also
+                one of the Seven Wonders of the World, standing as a timeless tribute to love, beauty, and
+                craftsmanship.
+              </p>
+            </div>
+            <div class="card">
+              <img
+                src="https://media.istockphoto.com/photos/the-india-gate-in-delhi-picture-id898467608?b=1&k=20&m=898467608&s=170667a&w=0&h=HlThQtBd6DV7ceWb25DBticSPDyKoCUnTfDy1vgQH0A="
+                alt="" style="height: 250px; border-radius: 25px 25px 0px 0px" />
+              <h3>India Gate</h3>
+              <p>
+                The India Gate, located in New Delhi, is a grand war memorial built to honor the soldiers of the Indian
+                Army who lost their lives during World War I and the Third Anglo-Afghan War. Designed by Sir Edwin
+                Lutyens and inaugurated in 1931, the monument stands 42 meters tall and resembles the Arc de Triomphe in
+                Paris. Beneath the arch lies the Amar Jawan Jyoti, an eternal flame added after the 1971 Indo-Pak war to
+                commemorate unknown soldiers. Surrounded by lush lawns and a vibrant atmosphere, India Gate is not only
+                a symbol of national pride but also a popular gathering place for locals and tourists alike.
+              </p>
+            </div>
+            <div class="card">
+              <img src="https://i.pinimg.com/1200x/d6/66/63/d66663365dbd599635aff490b1f2b48a.jpg" alt=""
+                style="height: 250px; border-radius: 25px 25px 0px 0px" />
+              <h3>Red Fort</h3>
+              <p>
+                The Red Fort, also known as Lal Qila, is a historic fort in Delhi that served as the main residence of
+                the Mughal emperors for over 200 years. Built by Emperor Shah Jahan in 1648, the fort is named after its
+                massive red sandstone walls that stretch over 2 kilometers. It showcases the brilliance of Mughal
+                architecture, with intricate carvings, marble inlays, and beautiful gardens. The Red Fort holds great
+                national significance, as the Prime Minister of India hoists the national flag here every Independence
+                Day. Recognized as a UNESCO World Heritage Site, it stands as a powerful symbol of India's rich history
+                and cultural heritage.
+              </p>
+            </div>
+            <div class="card">
+              <img src="https://i.pinimg.com/736x/8d/52/b3/8d52b358216f0c73f09d9e9bd41824e8.jpg" alt=""
+                style="height: 250px; border-radius: 25px 25px 0px 0px" />
+              <h3>Howrah Bridge</h3>
+              <p>
+                The Howrah Bridge, also known as Rabindra Setu, is an iconic cantilever bridge that spans the Hooghly
+                River in Kolkata, West Bengal. Opened in 1943, it connects the cities of Howrah and Kolkata and is one
+                of the busiest bridges in the world, carrying over a hundred thousand vehicles and countless pedestrians
+                daily. Made entirely of riveted steel, without the use of nuts or bolts, it is an engineering marvel of
+                its time. More than just a structure, the Howrah Bridge is a symbol of Kolkata’s heritage, playing a
+                central role in the city’s culture, economy, and identity.
+              </p>
+            </div>
+            <div class="card">
+              <img src="https://i.pinimg.com/736x/5d/39/a7/5d39a77bd6d057c03fc77cc212b16fcd.jpg" alt=""
+                style="height: 250px; border-radius: 25px 25px 0px 0px" />
+              <h3>Golden Temple</h3>
+              <p>
+                The Golden Temple, also known as Sri Harmandir Sahib, is the most sacred place of worship for Sikhs,
+                located in Amritsar, Punjab. Its stunning golden structure, surrounded by the holy Amrit Sarovar (pool
+                of nectar), creates a serene and spiritual atmosphere. Built in the 16th century by Guru Arjan Dev Ji,
+                the temple stands as a symbol of equality, peace, and devotion. Open to people of all faiths, the Golden
+                Temple also hosts the world’s largest free community kitchen (Langar), serving over a hundred thousand
+                meals daily. It is not only a spiritual center but also a symbol of humanity and service.
+              </p>
+            </div>
+            <div class="card">
+              <img
+                src="https://www.gokitetours.com/wp-content/uploads/2024/11/Top-7-Unique-Facts-About-the-Ajanta-and-Ellora-Caves.webp"
+                alt="" style="height: 250px; border-radius: 25px 25px 0px 0px" />
+              <h3>Ajanta and Ellora Caves</h3>
+              <p>The Ajanta and Ellora Caves, located in Maharashtra, are among the most remarkable ancient rock-cut
+                monuments in India. The Ajanta Caves, dating back to the 2nd century BCE, are known for their exquisite
+                Buddhist paintings and sculptures, showcasing the life of the Buddha. The Ellora Caves, carved between
+                the 6th and 10th centuries CE, represent a unique blend of Buddhist, Hindu, and Jain faiths, reflecting
+                India’s religious harmony. The highlight of Ellora is the Kailasa Temple, a massive monolithic structure
+                carved from a single rock. Both sites are UNESCO World Heritage Sites and stand as extraordinary
+                examples of art, architecture, and spiritual devotion.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
